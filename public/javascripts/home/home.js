@@ -12,4 +12,7 @@ $(document).ready(function(){
         $(".case_point").hide();
         $(".case_unpoint").show();
     });
+
+   $("#slides").slidesjs();
+
 });

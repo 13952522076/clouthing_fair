@@ -17,12 +17,55 @@
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="javascripts/home/head.js"></script>
     <script src="javascripts/home/home.js"></script>
+    <script src="javascripts/home/jquery.slides.min.js"></script>
 
 </head>
     <body>
         <% include includes/header %>
         <!--body content start-->
-主页
+        <div id="slides" class="home_picture">
+            <img src="images/home/home_picture_1.png">
+            <img src="images/home/home_picture_2.png">
+            <img src="images/home/home_picture_3.png">
+        </div>
+        <div class="orderFeturesContainer" style="width: 100%;margin: 0 auto;background-color: #f3f3f3;padding-top:10px;height:10%;">
+            <ul style=" width: 60%;margin: 0 auto; padding: 6px;height:21%">
+                <li style="float:left;list-style-type:none; margin-left: 8%;width: 26%;border-right: 1px solid gray;">
+                    <img src="images/home/bar_icon1.png" style="width:80%;"/>				</li>
+                <li style="float:left;list-style-type:none; margin-left: 6%;width: 26%;border-right: 1px solid gray;">
+                    <img src="images/home/bar_icon2.png" style="width:80%;"/>				</li>
+                <li style="float:left;list-style-type:none; margin-left: 6%;width: 26%;">
+                    <img src="images/home/bar_icon3.png" style="width:80%;"/>				</li>
+            </ul>
+        </div>
+        <!-- 订货流程 start-->
+        <div class="home_orderProcess">
+            <div class="home_order_arrow" style="width:14%;margin-left:2%;">
+                <img src="images/home/process.png"/>
+            </div>
+            <div class="process" style="width:15%;">
+                <img src="images/home/process1.png"/>
+            </div>
+            <div class="home_order_arrow" style="width:5%;">
+                <img src="images/home/rightArrow.png"/>
+            </div>
+            <div class="process" style="width:15%;">
+                <img src="images/home/process2.png"/>
+            </div>
+            <div class="home_order_arrow" style="width:5%;">
+                <img src="images/home/rightArrow.png"/>
+            </div>
+            <div class="process" style="width:15%;">
+                <img src="images/home/process3.png"/>
+            </div>
+            <div class="home_order_arrow" style="width:5%;">
+                <img src="images/home/rightArrow.png"/>
+            </div>
+            <div class="home_order_arrow" style="width:12%;margin-top: 1%;margin-left:1%;">
+                <img src="images/home/complete.png"/>
+            </div>
+        </div>
+        <!-- 订货流程 end-->
         <!--body content end-->
         <% include includes/foot %>
     </body>
