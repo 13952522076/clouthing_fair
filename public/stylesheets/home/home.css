@@ -98,12 +98,14 @@
     height: 50px;
     background: #f3f3f3;
     border: 1px solid lightgray;
+    border-radius: 5px;
 }
 .contact_form form div textarea{
     width:100%;
     background: #f3f3f3;
     border: 1px solid lightgray;
     height:15%;
+    border-radius: 5px;
 }
 .contact_submit{
     float: right;
@@ -113,4 +115,5 @@
     color: white;
     background-color: #e00c3e;
     border: 1px solid lightgray;
+    border-radius: 5px;
 }
