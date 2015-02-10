@@ -4,6 +4,7 @@
     <title>森云订货会</title>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="stylesheets/home/include.css" rel="stylesheet">
+    <link href="stylesheets/home/home.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -15,12 +16,31 @@
     <script src="javascripts/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="javascripts/home/head.js"></script>
+    <script src="javascripts/home/home.js"></script>
 
 </head>
 <body>
 <%include includes/header%>
 <!--body content start-->
-联系我们
+    <div class="case_title">
+        <p class="title_CN">联系我们</p>
+        <p class="title_EN">Contact Us</p>
+    </div>
+    <div class="contact_form">
+        <p>请填写留言信息</p>
+        <form>
+            <div>
+                <input type="text" placeholder="请留下你的大名(必填)" required/>
+            </div>
+            <div>
+                <input type="text" placeholder="你的电子邮箱或手机号码(必填)" required/>
+            </div>
+            <div>
+                <textarea placeholder="请描述您的需求，我们会在2个工作日之内与您取得联系"></textarea>
+            </div>
+            <div><input type="submit" class="contact_submit"></div>
+        </form>
+    </div>
 <!--body content end-->
 <% include includes/foot %>
 </body>
