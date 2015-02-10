@@ -1,0 +1,167 @@
+.head{
+    border-bottom: 2px solid lightgray;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-color:black;
+
+}
+.header{
+    margin-top: 10px;
+    width:80%;
+    height:90px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.logo{
+    width:120px;
+    height:70px;
+    background: url("../../images/home/includes/logo.png");
+    background-size: cover;
+    float: left;
+    margin-top: -25px;
+
+}
+.header_ul{
+    float: left;
+    text-align: center;
+    width:100%;
+    height:100%;
+    vertical-align: middle;
+
+}
+
+.header_ul li{
+    float: left;
+    margin-left: 5%;
+    height: 100%;
+    width:15%;
+    padding-top: 20px;
+    vertical-align: middle;
+
+}
+.header_underline{
+    border-bottom: 3px solid red;
+}
+.header_ul li a{
+
+    font-weight: 500;
+    text-decoration: none;
+}
+.home_gray{
+    width:25px;
+    height:20px;
+    background: url("../../images/home/includes/home_gray.png");
+    background-size: cover;
+    vertical-align: middle;
+}
+.ipad_gray{
+    width:25px;
+    height:20px;
+    background: url("../../images/home/includes/ipad_gray.png");
+    background-size: cover;
+    vertical-align: middle;
+}
+.case_gray{
+    width:25px;
+    height:20px;
+    background: url("../../images/home/includes/case_gray.png");
+    background-size: cover;
+    vertical-align: middle;
+}
+.contact_gray{
+    width:25px;
+    height:20px;
+    background: url("../../images/home/includes/contact_gray.png");
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.home_red{
+    width:25px;
+    height:20px;
+    background: url("../../images/home/includes/home_red.png");
+    background-size: cover;
+    vertical-align: middle;
+}
+.ipad_red{
+    width:25px;
+    height:20px;
+    background: url("../../images/home/includes/ipad_red.png");
+    background-size: cover;
+    vertical-align: middle;
+}
+.case_red{
+    width:25px;
+    height:20px;
+    background: url("../../images/home/includes/case_red.png");
+    background-size: cover;
+    vertical-align: middle;
+}
+.contact_red{
+    width:25px;
+    height:20px;
+    background: url("../../images/home/includes/contact_red.png");
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.textRed{
+    color:red;
+}
+.textBlack{
+    color:black;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: 110px;/*脚部的高度*/
+    clear:both;
+    width:90%;
+    border-top:2px solid lightgray;
+    margin-left:5%;
+}
+.foot{
+    padding-top: 10px;
+    width:90%;
+    margin:0 auto;
+    height:90px;
+
+
+}
+.foot div{
+    float: left;
+}
+.bottom{
+    text-align: center;
+    font-size: 10px;
+    color: gray;
+}
+.foot_company{
+    width:35%;
+}
+.foot_company p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height:30px;
+}
+.foot_company label{
+    font-size: 10px;
+    line-height: 10px;
+}
+.foot_contact{
+    width:50%;
+    padding-top:10px;
+}
+.foot_contact p{
+    line-height:10px;
+    font-size: 14px;
+}
+.font_weichat{
+    width: 80px;
+    height: 80px;
+    background: url("../../images/home/includes/foot_weichat.png");
+    background-size: cover;
+}
