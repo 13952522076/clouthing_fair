@@ -1,0 +1,86 @@
+#slides {
+    display: none
+}
+
+#slides .slidesjs-navigation {
+    margin-top:5px;
+}
+
+a.slidesjs-next,
+a.slidesjs-previous,
+a.slidesjs-play,
+a.slidesjs-stop {
+    display:none;
+}
+
+a.slidesjs-next {
+    display:none;
+}
+
+a:hover.slidesjs-next {
+    display:none;
+}
+
+a.slidesjs-previous {
+    display:none;
+}
+
+a:hover.slidesjs-previous {
+    display:none;
+}
+
+a.slidesjs-play {
+    display:none;
+}
+
+a:hover.slidesjs-play {
+    display:none;
+}
+
+a.slidesjs-stop {
+    display:none;
+}
+
+a:hover.slidesjs-stop {
+    display:none;
+}
+
+.slidesjs-pagination {
+    margin: 7px 0 0;
+    float: right;
+    list-style: none;
+}
+
+.slidesjs-pagination li {
+    float: left;
+    margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0px 3px;
+    background: transparent url(../../images/home/dot.png) no-repeat center top;
+    float: left;
+    overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+    background-position: 50% -9px;
+}
+
+.slidesjs-pagination li a:hover {
+    background-position: 50% -9px;
+}
+
+#slides a:link,
+#slides a:visited {
+    color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+    color: #9e2020
+}

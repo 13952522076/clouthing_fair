@@ -5,6 +5,7 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="stylesheets/home/include.css" rel="stylesheet">
     <link href="stylesheets/home/home.css" rel="stylesheet">
+    <link href="stylesheets/home/slides.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -24,12 +25,13 @@
         <% include includes/header %>
         <!--body content start-->
         <div id="slides" class="home_picture">
-            <img src="images/home/home_picture_1.png">
-            <img src="images/home/home_picture_2.png">
-            <img src="images/home/home_picture_3.png">
+            <img src="images/home/home_picture_1.jpg" style="width:80%;">
+            <img src="images/home/home_picture_2.jpg" style="width:80%;">
+            <img src="images/home/home_picture_3.jpg" style="width:80%;">
         </div>
-        <div class="orderFeturesContainer" style="width: 100%;margin: 0 auto;background-color: #f3f3f3;padding-top:10px;height:10%;">
-            <ul style=" width: 60%;margin: 0 auto; padding: 6px;height:21%">
+
+        <div class="home_orderFeturesContainer">
+            <ul style=" width: 1020px;margin: 0 auto; padding: 6px;">
                 <li style="float:left;list-style-type:none; margin-left: 8%;width: 26%;border-right: 1px solid gray;">
                     <img src="images/home/bar_icon1.png" style="width:80%;"/>				</li>
                 <li style="float:left;list-style-type:none; margin-left: 6%;width: 26%;border-right: 1px solid gray;">
@@ -66,6 +68,7 @@
             </div>
         </div>
         <!-- 订货流程 end-->
+        <div style="width:100%;height:120px;"></div>
         <!--body content end-->
         <% include includes/foot %>
     </body>

@@ -1,0 +1,263 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ipad订货会</title>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		//初始化选中第一个
+		init();
+	});
+
+	//初始化选中第一个
+	function init(){
+		var initMenuId = 'ourService';
+		addImgStyle(initMenuId);
+
+		var $container_ourService = $("#container_ourService");
+		$container_ourService.css("display","block");
+	}
+
+	//改变tab页显示切换
+	function changeTab(id){
+		var menuId = $("div.selected").attr("id");
+		if(id == menuId){
+			return;
+		}
+
+		removeImgStyle(menuId);	
+		$("#container_"+menuId).css("display","none");
+		
+		addImgStyle(id);
+		$("#container_"+id).css("display","block");
+	}
+
+	//去除menu部分选中图片样式
+	function removeImgStyle(index){
+		var $selectedMenu = $("#"+index);
+		$selectedMenu.removeClass("selected");
+
+		var imgSrc = $selectedMenu.find("img").attr("src");
+		var srcStrArray = imgSrc.split('Click');
+		var presentSrc = srcStrArray[0]+srcStrArray[1];
+		$selectedMenu.find("img").attr("src",presentSrc);
+	}
+
+	//给menu部分图片添加样式
+	function addImgStyle(index){
+		$selectedMenu = $("#"+index);
+		$selectedMenu.addClass("selected");
+
+		var preSrc =  $selectedMenu.find("img").attr("src");
+		var srcStrArray = preSrc.split('.');
+		var presentSrc = srcStrArray[0]+"Click."+srcStrArray[1];
+		$selectedMenu.find("img").attr("src",presentSrc);
+	}
+
+</script>
+</head>
+<body>
+	<div id="main" class="main" style="width: 100%;margin:0 auto;background-color: #487ecf;height:auto;">
+		<div id="container_ourService" class="ourService" style="width:60%;margin:0 auto;padding-top: 50px;display:none;">
+				<div class="title" style="width:100%;margin:0 auto;text-align:center;">
+					<span style="font-size: 30px;font-weight: 800;color: white;">我们的服务</span>
+				</div>
+				<div style="width:500px;margin:0 auto;text-align:center;margin-top:30px;overflow: hidden;" class="content" id="content">
+					<div style="float:left;width:250px">
+						<div style="margin-bottom: 20px;">
+							<img src="images/home/circleService.png" style="width:40%"/>
+						</div>
+						<label style="font-size: 14px;font-weight: 200;color: white;line-height:20px;">提供订货流程全程技术支持。</label>	
+					</div>
+					<div style="float:left;list-style-type:none;width:250px">
+						<div style="margin-bottom: 20px;">
+							<img src="images/home/circleService.png" style="width:40%"/>
+						</div>
+						<label style="font-size: 14px;font-weight: 200;color: white;line-height:20px;">支持多品牌、多店订货，大店长一人<br/>即可完成连锁店的订货会工作。</label>
+					</div>
+				</div>
+		</div>
+		<div id="container_traditionalOrder" class="traditionalOrder" style="width:60%;margin:0 auto;padding-top: 50px;display:none;">
+				<div class="title" style="width:100%;margin:0 auto;text-align:center;">
+					<span style="font-size: 30px;font-weight: 800;color: white;">传统订货会</span>
+				</div>
+				<div style="width:550px;margin:0 auto;text-align:center;margin-top:30px;overflow: hidden;" class="content" id="content">
+					<ul style="float:left;width:550px;line-height:20px;">
+						<li style="list-style-type:none;float:left;">
+							<img src="images/home/star.png" style="width:14px"/>
+							<span style="font-size: 14px;font-weight: 200;color: white;">1. 工录单只能在提交后才能看到订货人的订货统计，且具有一定错误率。</span>
+						</li>
+						<li style="list-style-type:none;float:left;">
+							<img src="images/home/star.png" style="width:14px"/>
+							<span style="font-size: 14px;font-weight: 200;color: white;">2. 订货人以单款为订货单元，缺乏对系列的整体观。</span>
+						</li>
+						<li style="list-style-type:none;float:left;">
+							<img src="images/home/star.png" style="width:14px"/>
+							<span style="font-size: 14px;font-weight: 200;color: white;">3. 订货人之间缺乏交流，也无从了解其他人的订货情况。</span>
+						</li>
+						<li style="list-style-type:none;float:left;">
+							<img src="images/home/star.png" style="width:14px"/>
+							<span style="font-size: 14px;font-weight: 200;color: white;">4. 必定(主推)款未细分，考虑订货人特征（门店数量，门面大小，营业额）方面较少。</span>
+						</li>
+						<li style="list-style-type:none;float:left;">
+							<img src="images/home/star.png" style="width:14px"/>
+							<span style="font-size: 14px;font-weight: 200;color: white;">5. 一些评分订货法的经验不能提供作为订货工具。</span>
+						</li>
+						<li style="list-style-type:none;float:left;">
+							<img src="images/home/star.png" style="width:14px"/>
+							<span style="font-size: 14px;font-weight: 200;color: white;">6. 没有及时、直观、准确的分析报表在第一现场指导订货。</span>
+						</li>
+						<li style="list-style-type:none;float:left;">
+							<img src="images/home/star.png" style="width:14px"/>
+							<span style="font-size: 14px;font-weight: 200;color: white;">7. 无法将品牌公司的设计理念、流行趋势传递给加盟商/经销商。</span>
+						</li>
+					</ul>
+				</div>
+		</div>
+		<div id="container_solutions" class="solutions" style="width:60%;margin:0 auto;padding-top: 50px;display:none;">
+				<div class="title" style="width:100%;margin:0 auto;text-align:center;">
+					<span style="font-size: 30px;font-weight: 800;color: white;">解决方案</span>
+				</div>
+				<div style="width:740px;margin:0 auto;text-align:center;margin-top:30px;overflow: hidden;" class="content">
+					<div class="solution1" style="border-right: 2px dashed white;float:left;width:240px;height:160px;text-align: left;">
+						<ul>
+							<li style="list-style-type:none;">
+								<img src="images/home/tTriangle.png" style="width:26px"/>
+								<label style="font-size: 26px;font-weight: 700;color: white;">产品描述</label>
+							</li>
+							<li style="list-style-type:none; margin-top:30px;">
+								<span style="font-size: 14px;font-weight: 200;color: white;line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;从事服饰、鞋业、内衣<br/>等企业进行无线订货会的<br/>首选系统。</span>
+							</li>
+						</ul>
+					</div>
+					<div class="solution2" style="border-right: 2px dashed white;float:left;width: 240px;height:160px;text-align: left;">
+						<ul>
+							<li style="list-style-type:none;">
+								<img src="images/home/tTriangle.png" style="width:26px"/>
+								<label style="font-size: 26px;font-weight: 700;color: white;">设计定位</label>
+							</li>
+							<li style="list-style-type:none; margin-top:30px;">
+								<span style="font-size: 14px;font-weight: 200;color: white;line-height:25px;">集中订货与远程订货并存，<br/>低成本、不限终端、无需<br/>安装。</span>
+							</li>
+						</ul>
+					</div>
+					<div class="solution3" style="float:left;width: 240px;height:160px;text-align: left;">
+						<ul>
+							<li style="list-style-type:none;">
+								<img src="images/home/tTriangle.png" style="width:26px"/>
+								<label style="font-size: 26px;font-weight: 700;color: white;">使用客户</label>
+							</li>
+							<li style="list-style-type:none; margin-top:30px;">
+								<span style="font-size: 14px;font-weight: 200;color: white;line-height:25px;">希望开展订货会且提高订货<br/>会效率和质量的企业。</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="descripation1" style="width:760px;margin:0 auto;text-align:left;margin-top:40px;">
+					<p class="textClass" style="font-size: 14px;font-weight: 200;color: white;line-height:25px;">
+						功能特点：
+						不用安装，不限终端（带WiFi）
+						高效、便捷、准确、系统地下单，帮助订货人下一张结构合理的订单
+						将商品选择流程（如以系列为出发点，以色款为单元）融入订货操作。
+						支持建立订货评分指标体系，此评分在订货过程中为经销商提供建议。
+						每位订货人都可以对所有商品进行评价，提出修改建议，设计师及商品部能够随时汇总修改意见，并及时做出响应。
+						及时、灵活调配的现场实时龙虎榜，并且支持满足当前搜索条件商品的实时排名。
+						深入分析数据，评估订货效果
+						保证品牌公司产品的安全性，保密性
+						提供第三方ERP的订单导入。
+					</p>
+				</div>
+				<div class="descripation2" style="width:760px;margin:0 auto;text-align:left;margin-top:30px;">
+					<p class="textClass" style="font-size: 14px;font-weight: 200;color: white;line-height:25px;">
+						系统背景：
+						本系统经过认真严谨的市场需求调研，专业从事服饰和鞋业等企业的专家顾问团提供需求指导，成功从事多年系统解决方案的银光软件开发团队，以需求为导向，贯穿客户使用的人性化、安全性、精确性，并经过多次Bug 测试、业务逻辑测试、压力测试完成后形成的无线订货会系统解决方案。并可以根据客户的实际需求进行调整，满足客户的需要。
+					</p>
+				</div>
+		</div>
+		<div id="container_designIdeal" class="designIdeal" style="width:60%;margin:0 auto;padding-top: 50px;display:none;">
+				<div class="title" style="width:100%;margin:0 auto;text-align:center;">
+					<span style="font-size: 30px;font-weight: 800;color: white;">设计理念</span>
+				</div>
+				<div style="width:500px;margin:0 auto;text-align:center;margin-top:30px;overflow: hidden;" class="content">
+					<img src="images/home/designIdeal.png" style="width:100%"/>
+				</div>
+		</div>
+		<div id="container_ipadAir" class="ipadAir" style="width:60%;margin:0 auto;padding-top: 50px;display:none;">
+				<div class="title" style="width:100%;margin:0 auto;text-align:center;">
+					<span style="font-size: 30px;font-weight: 800;color: white;">iPad Air</span>
+				</div>
+				<div style="margin:0 auto;margin-top:50px;width:900px;overflow: hidden;" class="content">
+					<div class="ipadAir1" style="width:100px;margin:0 auto;float:left;margin-left:35px;margin-top:20px;">
+						<img src="images/home/ipadAir1.png" style="width:80px"/>
+					</div>
+					<div class="ipadAir1Text" style="width:290px;margin:0 auto;float:left;margin-left:14px;margin-top:20px;">
+							<label style="font-size: 20px;font-weight: 500;color: white;">纤薄、坚固</label>
+							<br/><br/>
+							<span style="font-size: 14px;font-weight: 200;color: white;line-height:25px;">iPad Air 仅有 7.5 毫米之薄，不足一斤之轻。尽管如此轻巧，其精致的铝金属 Unibody 一体成型机身仍然不失坚固耐用的手感。</span>
+					</div>	
+					<div class="ipadAir2" style="width:100px;margin:0 auto;float:left;margin-left:35px;margin-top:20px;">
+						<img src="images/home/ipadAir2.png" style="width:80px"/>
+					</div>
+					<div class="ipadAir2Text" style="width:290px;margin:0 auto;float:left;margin-left:14px;margin-top:20px;">
+							<label style="font-size: 20px;font-weight: 500;color: white;">9.7 英寸 Retina 显示屏</label>
+							<br/><br/>
+							<span style="font-size: 14px;font-weight: 200;color: white;line-height:25px;">绚丽夺目的 Retina 显示屏拥有超过 310 万的像素数量，比 HDTV 的像素数还高出百万之多，令照片和视频看起来细节纤毫毕现，文字分外清晰明锐。</span>
+					</div>	
+					<div class="ipadAir3" style="width:100px;margin:0 auto;float:left;margin-left:35px;margin-top:20px;">
+						<img src="images/home/ipadAir3.png" style="width:80px"/>	
+					</div>
+					<div class="ipadAir3Text" style="width:290px;margin:0 auto;float:left;margin-left:14px;margin-top:20px;">
+							<label style="font-size: 20px;font-weight: 500;color: white;">A7 芯片</label>
+							<br/><br/>
+							<span style="font-size: 14px;font-weight: 200;color: white;line-height:25px;">强劲、节能的 A7 芯片采用 64 位架构，令一切响应都异常灵敏，并仍能拥有长达 10 小时的电池使用时间2</span>
+					</div>
+					<div class="ipadAir4" style="width:100px;margin:0 auto;float:left;margin-left:35px;margin-top:20px;">
+						<img src="images/home/ipadAir4.png" style="width:80px"/>
+					</div>
+					<div class="ipadAir4Text" style="width:290px;margin:0 auto;float:left;margin-left:14px;margin-top:20px;">
+							<label style="font-size: 20px;font-weight: 500;color: white;">超快的无线网络连接</label>
+							<br/><br/>
+							<span style="font-size: 14px;font-weight: 200;color: white;line-height:25px;">配备 MIMO 技术的 802.11n 无线网络连接带来超快的速度表现4。 WLAN + Cellular 机型支持更多频段，可快速连接世界各地的网络1。</span>
+					</div>	
+				</div>
+		</div>
+		<div class="download" style="width:300px;margin:0 auto;text-align:center;margin-top: 40px;">
+				<img src="images/home/app.png" style="width:100px"/>
+				<img src="images/home/tCode.png" style="width:35px"/>
+		</div>
+		<div class="bottomMenu" style="width:500px;margin:0 auto;margin-top: 40px;height:120px;text-align:center;">
+			<div style="float:left;list-style-type:none;width:100px" class="menu" id="ourService" onclick="changeTab(this.id)">
+				<div style="margin-bottom: 10px;">
+					<img src="images/home/menu1.png" style="width:50%"/>
+				</div>
+				<label style="font-size: 14px;font-weight: 200;color: white;">我们的服务</label>	
+			</div>
+			<div style="float:left;list-style-type:none;width:100px" class="menu" id="traditionalOrder" onclick="changeTab(this.id)">
+				<div style="margin-bottom: 10px;">
+					<img src="images/home/menu2.png" style="width:50%"/>
+				</div>
+				<label style="font-size: 14px;font-weight: 200;color: white;">传统订货会</label>
+			</div>
+			<div style="float:left;list-style-type:none;width:100px" class="menu" id="solutions" onclick="changeTab(this.id)">
+				<div style="margin-bottom: 10px;">
+					<img src="images/home/menu3.png" style="width:50%"/>
+				</div>
+				<label style="font-size: 14px;font-weight: 200;color: white;">解决方案</label>
+			</div>
+			<div style="float:left;list-style-type:none;width:100px" class="menu" id="designIdeal" onclick="changeTab(this.id)">
+				<div style="margin-bottom: 10px;">
+					<img src="images/home/menu4.png" style="width:50%"/>
+				</div>
+				<label style="font-size: 14px;font-weight: 200;color: white;">设计理念</label>
+			</div>
+			<div style="float:left;list-style-type:none;width:100px" class="menu" id="ipadAir" onclick="changeTab(this.id)">
+				<div style="margin-bottom: 10px;">
+					<img src="images/home/menu5.png" style="width:50%"/>
+				</div>
+				<label style="font-size: 14px;font-weight: 200;color: white;">iPad Air</label>
+			</div>
+		</div>
+	</div>			
+</body>
+</html>
